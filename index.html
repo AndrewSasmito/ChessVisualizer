@@ -9,26 +9,49 @@
         <div class="chessboard" id="chessboard"></div>
         <script src="script.js"></script>
         <br><br>
-        <form id="frm1" onsubmit="return false">
-            Put chess pieces in the form (WNe3) where the first character is the colour and the rest are in chess notation (P represents pawn): <input type="text" id="inputs" value=""><br>
-            <button onclick="inputer()">Create</button> <br> <br>
-            
-            Erase the piece on the square: <input type="text" id="erasing" value="">
-            <button onclick="getrid()">Erase</button> <br> <br>
-            
-            It is 
-            <button onclick="switcheroo()" id="turner">White</button>'s turn <br> <br>
-            
-            Put in the moveset, make sure every move is separated by a space each time<br>
-            <input type="text" id="moving" value=""><br>
-            <button onclick="mover()">Submit</button>
+        <div id = "instructor">
+            <h1>
+                Instructions:
+            </h1>
+            <p>
+                Enter your moveset into the box, click submit then use the left arrow key to see your pieces move!
+            </p>
+        </div>
+        <div class = "container">
 
-            <br><br>
-            
-            <br>
-            <button onclick="Destroy()">Remove all pieces</button> <br> <br>
-            <button onclick="Reseter()">Reset the board</button> <br> <br>
-            <a href = "https://www.chess.com/terms/chess-notation" class = "button_link">Learn Chess Notation</a>
-        </form>
+            <form id="frm1" onsubmit="return false">
+                <h1 class = "labeler">
+                    Functions
+                </h1>
+                Put chess pieces in the form (WNe3) where P represents pawn: <input type="text" id="inputs" value="">
+                <button onclick="inputer()">Create</button> <br> <br>
+                
+                Erase the piece on the square: <input type="text" id="erasing" value="">
+                <button onclick="getrid()">Erase</button> <br> <br>
+                
+                It is 
+                <button onclick="switcheroo()" id="turner">White</button>'s turn <br> <br>
+                
+                Put in the moveset, separated by a spaces<br>
+                <input type="text" id="moving" value=""> <button onclick="mover()">Submit</button>
+
+                <br><br>
+                
+                <br>
+                <button class = "warn" onclick="Destroy()">Remove all pieces</button>
+                <button class = "warn" onclick="Reseter()">Reset the board</button> <br> <br>
+                
+            </form>
+
+
+            <div id = "resources">
+                <h1 class = "labeler">
+                    Resources
+                </h1>
+                <a href = "https://www.chess.com/learn-how-to-play-chess" class = "button_link" target="_blank">Learn Chess</a> <br> <br> <br>
+                <a href = "https://www.chess.com/terms/chess-notation" class = "button_link" target="_blank">Learn Chess Notation</a>
+            </div>
+
+        </div>
     </body>
 </html>

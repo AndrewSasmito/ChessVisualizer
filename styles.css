@@ -1,23 +1,65 @@
-/* styles.css */
+* {
+  padding: 0px;
+  margin: 0px
+}
+body{
+  background-image: linear-gradient(to right, red , yellow, red);
+}
+
+button{
+  background-color: rgba(4, 215, 50, 0.737);
+  padding: 10px;
+  font-size: 15px;
+  text-size-adjust: 10px;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+}
+
 #titler{
   font-family: 'Courier New', Courier, monospace;
-  font-size: 60px;
+  font-size: 80px;
   text-align: center;
 }
 
+#frm1{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: bisque;
+}
+
+#resources{
+  background-color: antiquewhite;
+}
+
+#instructor{
+  height: 100px;
+  text-align: center;
+  background-color: blanchedalmond;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.labeler {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
 .chessboard {
-  width: 320px;
-  height: 320px;
+  width: 650px;
+  height: 650px;
   display: grid;
   grid-template-columns: repeat(9, 1fr);
+  background-color: aquamarine;
   border: 5px solid;
   margin: auto;
   padding: 20px;
 }
 
 .square {
-  width: 40px;
-  height: 40px;
+  width: 75px;
+  height: 75px;
   background-color: #eee;
   display: flex;
   justify-content: center;
@@ -38,3 +80,18 @@
 .square.odd{
   background-color: rgb(100, 85, 85);
 }
+
+.button_link{
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.warn{
+  background-color: #f44336;
+  margin: 30px;
+  margin-right: 50px;
+  align-items: center;
+  padding: 20px;
+}
+
+

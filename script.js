@@ -47,8 +47,8 @@ function draw(){
   for (let row = 0; row < 8; row++) {
     //Number notation
     let square = document.createElement('div'), note = document.createElement('div');
-    note.style.padding = '10px 0', square.className = 'notation'
-    square.appendChild(note), note.textContent = String(8 - row), chessboard.appendChild(square)
+    note.style.padding = '15px', square.className = 'notation'
+    square.appendChild(note), note.textContent = String(8 - row), chessboard.appendChild(square), note.style.fontSize = '25px'
 
     for (let col = 0; col < 8; col++) {
         let rowClass = (row % 2 === col % 2) ? 'even' : 'odd';
@@ -58,8 +58,8 @@ function draw(){
         if (board_state[row][col] !== 0) {
           let piece = document.createElement("img");
           piece.className = 'piece';
-          piece.width = 45;
-          piece.height = 45;
+          piece.width = 70;
+          piece.height = 70;
           piece.src = getPieceSymbol(board_state[row][col]);
           square.appendChild(piece);
         }
@@ -70,7 +70,7 @@ function draw(){
 
   for (let col = 0; col < 9; col++){
     let square = document.createElement('div'), notes = document.createElement('div')
-    notes.style.fontSize = '15px', notes.style.textAlign = 'center', square.className = 'notation'
+    notes.style.fontSize = '25px', notes.style.textAlign = 'center', square.className = 'notation'
     
     if (col != 0){
       notes.textContent = intToChar(cur - 1)
